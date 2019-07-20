@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+
+
+
+    <title>Crystal Collector</title>
+</head>
+<body>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4">Crystal Collector</h1>
+          <p class="lead">Click on the mysterious crystals to increase your score</p>
+        </div>
+    </div>
+    
+    <div class="card" style="width: 40rem;">
+        <ul class="list-group list-group-flush">
+        <li class="list-group-item">You will be given a random number at the start of the game.</li>
+        <li class="list-group-item">There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</li>
+        <li class="list-group-item">You win the game by matching your total score to the random number. You lose the game if your total score goes above the random number.</li>
+        <li class="list-group-item">The value of each crystal is hidden from you until you click on it.</li>
+        <li class="list-group-item">Each time the game starts or restarts, the game will change the values of the crystals.</li>
+        </ul>
+    </div>
+    
+    <br><br>
+
+    <div class="numberToReach">
+        <h3>Number To Reach:
+                <span id= "randomNumber"></span>
+        </h3>
+    </div>
+
+    <div class="scoreboard">
+        <h3>Wins:
+            <span id="wins">0</span>
+        </h3>
+        <br>
+        <h3>Losses:
+            <span id="losses">0</span>
+        </h3>
+    </div>
+
+    <div class="floatReset"></div>
+
+    <div class="playerTotal">
+            <h2>Your total score is:
+                <span id="finalTotal">0</span>
+            </h2>
+    </div>
+
+    <div class="gems">
+            <img src="assets/images/blue.png" class=gemImage id="blue" alt="Blue Gem">
+            <img src="assets/images/green.png" class=gemImage id="green" alt="Green Gem">
+            <img src="assets/images/red.png" class=gemImage id= "red" alt="Red Gem">
+            <img src="assets/images/yellow.png" class=gemImage id= "yellow" alt="Yellow Gem">
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>
